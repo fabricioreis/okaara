@@ -1,0 +1,44 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<g:HTMLPanel>
+		<form class="form-horizontal">
+			<!-- Registration form starts -->
+			<!-- Name -->
+			<div class="form-group">
+				<label class="control-label col-lg-3" for="name">Name</label>
+				<div class="col-lg-9">
+					<input type="text" class="form-control" id="name" />
+				</div>
+			</div>
+			<!-- Email -->
+			<div class="form-group">
+				<label class="control-label col-lg-3" for="email">Email</label>
+				<div class="col-lg-9">
+					<input type="text" class="form-control" id="email" />
+				</div>
+			</div>
+			<!-- Username -->
+			<div class="form-group">
+				<label class="control-label col-lg-3" for="username">Username</label>
+				<div class="col-lg-9">
+					<input type="text" class="form-control" id="username" />
+				</div>
+			</div>
+			<!-- Password -->
+			<div class="form-group">
+				<label class="control-label col-lg-3" for="email">Password</label>
+				<div class="col-lg-9">
+					<input type="password" class="form-control" id="password" />
+				</div>
+			</div>
+			<!-- Accept box and button s -->
+			<div class="form-group">
+				<div class="col-lg-9 col-lg-offset-3">
+					<button type="submit" class="btn btn-sm btn-info">Register</button>
+					<button type="reset" class="btn btn-sm btn-default">Reset</button>
+				</div>
+			</div>
+		</form>
+	</g:HTMLPanel>
+</ui:UiBinder> 
