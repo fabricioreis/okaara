@@ -5,7 +5,7 @@ import org.fusesource.restygwt.client.Defaults;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.ui.Widget;
-import com.okaara.client.application.login.LoginUX;
+import com.okaara.client.application.login.Login;
 import com.okaara.client.framework.restygwt.RestygwtExceptionMapper;
 import com.okaara.client.framework.view.ApplicationManage;
 
@@ -18,7 +18,7 @@ public class OkaaraEntryPoint implements EntryPoint {
 	}
 
 	private void initialize() {
-		ApplicationManage.changeBody((Widget) GWT.create(LoginUX.class));
+		ApplicationManage.changeBody((Widget) GWT.create(Login.class));
 	}
 
 	private void configureRestyGwt() {

@@ -16,16 +16,16 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
-import com.okaara.client.application.portal.PortalUX;
+import com.okaara.client.application.portal.Portal;
 import com.okaara.client.framework.view.ApplicationManage;
 import com.okaara.shared.client.model.Authorized;
 import com.okaara.shared.client.model.User;
 
-public class LoginUX extends Composite {
+public class Login extends Composite {
 
 	private static LoginUiBinder uiBinder = GWT.create(LoginUiBinder.class);
 
-	interface LoginUiBinder extends UiBinder<Widget, LoginUX> {
+	interface LoginUiBinder extends UiBinder<Widget, Login> {
 	}
 
 	// protected @UiField Form formLogin;
@@ -37,7 +37,7 @@ public class LoginUX extends Composite {
 	protected @UiField Button login;
 	protected @UiField Button clean;
 
-	public LoginUX() {
+	public Login() {
 		initWidget(uiBinder.createAndBindUi(this));
 	}
 
@@ -72,7 +72,7 @@ public class LoginUX extends Composite {
 
 			@Override
 			public void onSuccess(Method method, Authorized response) {
-				ApplicationManage.changeBody((Widget) GWT.create(PortalUX.class));
+				ApplicationManage.changeBody((Widget) GWT.create(Portal.class));
 			}
 
 			@Override

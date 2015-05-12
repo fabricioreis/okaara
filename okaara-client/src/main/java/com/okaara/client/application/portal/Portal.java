@@ -5,15 +5,14 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
 
-public class PortalUX extends Composite {
+public class Portal extends Composite {
 
 	private static PortalUXUiBinder uiBinder = GWT.create(PortalUXUiBinder.class);
 
-	interface PortalUXUiBinder extends UiBinder<Widget, PortalUX> {
+	interface PortalUXUiBinder extends UiBinder<Widget, Portal> {
 	}
 
-	public PortalUX() {
+	public Portal() {
 		initWidget(uiBinder.createAndBindUi(this));
 	}
-
 }
